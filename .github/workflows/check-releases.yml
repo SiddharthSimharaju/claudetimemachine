@@ -1,0 +1,30 @@
+name: Check Claude release notes
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Every Monday 9am UTC
+  workflow_dispatch:        # Manual trigger any time
+
+jobs:
+  check-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch release notes and diff
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/check-releases.mjs
+
+      - name: Open PR if updates exist
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: add new Claude updates from release notes"
+          title: "New Claude updates detected"
+          body: "Auto-detected new major updates from the Claude release notes page. Review the new entries in `data/updates.ts` before merging."
+          branch: auto/new-releases
+          delete-branch: true
