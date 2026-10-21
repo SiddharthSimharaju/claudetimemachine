@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.GITHUB_PAGES ? "/claudetimemachine" : "";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath,
+  assetPrefix: basePath || undefined,
+  images: { unoptimized: true },
+  trailingSlash: true,
 };
 
 export default nextConfig;
