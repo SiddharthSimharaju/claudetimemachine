@@ -17,7 +17,7 @@ jobs:
 
       - name: Fetch release notes and diff
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/check-releases.mjs
 
       - name: Open PR if updates exist

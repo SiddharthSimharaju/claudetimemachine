@@ -8,16 +8,15 @@ async function main() {
 
   const currentFile = fs.readFileSync('data/updates.ts', 'utf8')
 
-  console.log('Asking Claude to diff...')
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
+  console.log('Asking OpenAI to diff...')
+  const response = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'x-api-key': process.env.ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01'
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-5-5',
+      model: process.env.OPENAI_MODEL || 'gpt-4.1',
       max_tokens: 4000,
       messages: [{
         role: 'user',
@@ -66,16 +65,16 @@ Return ONLY a JSON array of new Update objects. If there are no new major releas
   const data = await response.json()
 
   if (data.error) {
-    console.error('Claude API error:', data.error)
+    console.error('OpenAI API error:', data.error)
     process.exit(1)
   }
 
   let newEntries
   try {
-    newEntries = JSON.parse(data.content[0].text)
+    newEntries = JSON.parse(data.choices[0].message.content.replace(/^```(?:json)?\s*|\s*```$/g, ''))
   } catch (e) {
-    console.log('Claude response was not valid JSON — likely no updates found.')
-    console.log('Response:', data.content[0].text)
+    console.log('Model response was not valid JSON — likely no updates found.')
+    console.log('Response:', data.choices[0].message.content)
     return
   }
 
