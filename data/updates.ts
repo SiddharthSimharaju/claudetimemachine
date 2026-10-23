@@ -2,6 +2,348 @@ import { Update } from '@/types/update'
 
 export const updates: Update[] = [
   {
+    "id": "claude-duet-oct-2026",
+    "date": "Oct 21, 2026",
+    "isoDate": "2026-10-21",
+    "title": "Claude Duet enters research preview",
+    "category": "Agent",
+    "summary": "Anthropic opened a research preview of Claude Duet, a new app where Claude works as a proactive agent. It is available to Pro and Max users.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Introducing Claude Duet",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://claude.com/resources/articles/claude-duet"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "haiku-5-5-oct-2026",
+    "date": "Oct 7, 2026",
+    "isoDate": "2026-10-07",
+    "title": "Claude Haiku 5.5 launches",
+    "category": "Model",
+    "summary": "Haiku 5.5 is Anthropic's cheapest, fastest and most capable small model yet. It is built for high-volume, cost-sensitive work.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude Haiku 5.5",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://www.anthropic.com/claude-haiku-5-5"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "sonnet-5-5-sep-2026",
+    "date": "Sep 28, 2026",
+    "isoDate": "2026-09-28",
+    "title": "Claude Sonnet 5.5 launches",
+    "category": "Model",
+    "summary": "Sonnet 5.5 is the second model in the Claude 5.5 family: a faster, lower-cost complement to Opus 5.5.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "plugins-directory-sep-2026",
+    "date": "Sep 25, 2026",
+    "isoDate": "2026-09-25",
+    "title": "Developers can build plugins for Claude",
+    "category": "Platform",
+    "summary": "Developers can submit plugins to the Claude directory through a new developer portal, track them through review, and see usage analytics once they are live.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "opus-5-5-sep-2026",
+    "date": "Sep 22, 2026",
+    "isoDate": "2026-09-22",
+    "title": "Claude Opus 5.5 launches",
+    "category": "Model",
+    "summary": "Opus 5.5 is the first model in the Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "designs-decks-docs-sep-2026",
+    "date": "Sep 16, 2026",
+    "isoDate": "2026-09-16",
+    "title": "Designs, decks and docs in any conversation",
+    "category": "Feature",
+    "summary": "Ask for a design, deck or document in any conversation, including Claude Code and the Artifacts tab, and edit it with Claude or directly. It brings Claude Design, Claude Slides and a new Claude Docs into every chat.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "cowork-everywhere-sep-2026",
+    "date": "Sep 16, 2026",
+    "isoDate": "2026-09-16",
+    "title": "Cowork comes to every conversation",
+    "category": "Agent",
+    "summary": "Everything Cowork does is now available from any conversation, with no need to pick a mode first. Chats, tasks, projects, connectors and skills carry over.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "fable-mythos-5-1-sep-2026",
+    "date": "Sep 1, 2026",
+    "isoDate": "2026-09-01",
+    "title": "Claude Fable 5.1 and Mythos 5.1 launch",
+    "category": "Model",
+    "summary": "Anthropic calls Fable 5.1 and Mythos 5.1 the world's most advanced models for coding and knowledge work.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude Fable 5.1 and Mythos 5.1",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "memory-cowork-aug-2026",
+    "date": "Aug 25, 2026",
+    "isoDate": "2026-08-25",
+    "title": "Memory comes to Cowork",
+    "category": "Feature",
+    "summary": "Memory now works across chat and Cowork. Everything Claude remembers is listed as editable topics under Settings, and sensitive topics stay out unless you turn them on.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "opus-5-jul-2026",
+    "date": "Jul 24, 2026",
+    "isoDate": "2026-07-24",
+    "title": "Claude Opus 5 launches",
+    "category": "Model",
+    "summary": "Opus 5 comes close to the frontier intelligence of Claude Fable 5 at half the price, and is described as thoughtful and proactive.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "cowork-web-mobile-jul-2026",
+    "date": "Jul 7, 2026",
+    "isoDate": "2026-07-07",
+    "title": "Cowork on web and mobile",
+    "category": "Agent",
+    "summary": "Cowork is now available on web and mobile as well as desktop. Sessions run remotely and are saved to your account, so work continues when you close your laptop.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "sonnet-5-jun-2026",
+    "date": "Jun 30, 2026",
+    "isoDate": "2026-06-30",
+    "title": "Claude Sonnet 5 launches",
+    "category": "Model",
+    "summary": "Sonnet 5 is Anthropic's most agentic Sonnet yet, with big gains over Sonnet 4.6 in reasoning, tool use, coding and knowledge work.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "fable-5-jun-2026",
+    "date": "Jun 9, 2026",
+    "isoDate": "2026-06-09",
+    "title": "Claude Fable 5 launches",
+    "category": "Model",
+    "summary": "Fable 5 is a Mythos-class model that Anthropic has made safe for general use. The announcement also covers Claude Mythos 5.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "opus-4-8-may-2026",
+    "date": "May 28, 2026",
+    "isoDate": "2026-05-28",
+    "title": "Claude Opus 4.8 launches",
+    "category": "Model",
+    "summary": "Opus 4.8 improves on Opus 4.7 in coding, agentic skills, reasoning and practical knowledge work.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "claude-design-apr-2026",
+    "date": "Apr 17, 2026",
+    "isoDate": "2026-04-17",
+    "title": "Claude Design launches",
+    "category": "Feature",
+    "summary": "A new Anthropic Labs product for working with Claude to create designs, prototypes, slides and one-pagers.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "opus-4-7-apr-2026",
+    "date": "Apr 16, 2026",
+    "isoDate": "2026-04-16",
+    "title": "Claude Opus 4.7 launches",
+    "category": "Model",
+    "summary": "Opus 4.7 is generally available, with better software engineering on long-running tasks and higher-resolution vision.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "cowork-ga-apr-2026",
+    "date": "Apr 9, 2026",
+    "isoDate": "2026-04-09",
+    "title": "Cowork is generally available",
+    "category": "Agent",
+    "summary": "Cowork is GA on macOS and Windows through Claude Desktop, with Analytics API support, usage analytics and OpenTelemetry.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
+    "id": "mobile-interactive-apps-mar-2026",
+    "date": "Mar 25, 2026",
+    "isoDate": "2026-03-25",
+    "title": "Interactive apps on iOS and Android",
+    "category": "Feature",
+    "summary": "The mobile app can now pull up live charts, sketch diagrams and build shareable assets, all rendered inside the conversation.",
+    "killed": [],
+    "links": [
+      {
+        "label": "Claude release notes",
+        "source": "Anthropic",
+        "type": "announcement",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+    ],
+    "vibes": [],
+    "killedCompanies": []
+  },
+  {
     id: "computer-use-cowork-mar-2026",
     date: "Mar 23, 2026",
     isoDate: "2026-03-23",

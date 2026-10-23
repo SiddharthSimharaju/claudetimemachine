@@ -37,9 +37,9 @@ export function UpdateCard({ update, scale }: UpdateCardProps) {
 
         <hr className="card-divider" />
 
-        <KilledPanel items={update.killed} />
-        <InternetSaid links={update.links} vibes={update.vibes} />
-        <KilledCompanies companies={update.killedCompanies} />
+        {update.killed.length > 0 && <KilledPanel items={update.killed} />}
+        {update.links.length > 0 && <InternetSaid links={update.links} vibes={update.vibes} />}
+        {update.killedCompanies.length > 0 && <KilledCompanies companies={update.killedCompanies} />}
       </div>
     </motion.div>
   )

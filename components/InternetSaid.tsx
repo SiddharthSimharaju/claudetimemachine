@@ -58,7 +58,7 @@ export function InternetSaid({ links, vibes }: InternetSaidProps) {
         ))}
       </div>
 
-      <div className="flex gap-2 flex-wrap">
+      {vibes.length > 0 && (<div className="flex gap-2 flex-wrap">
         {vibes.map((vibe) => (
           <div
             key={vibe.label}
@@ -68,7 +68,7 @@ export function InternetSaid({ links, vibes }: InternetSaidProps) {
             <span className="opacity-60">{vibe.pct}%</span>
           </div>
         ))}
-      </div>
+      </div>)}
     </div>
   )
 }
